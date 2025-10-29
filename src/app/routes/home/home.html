@@ -1,0 +1,95 @@
+@if (about | async; as aboutData) {
+<div class="entry container">
+  <h1 class="typography-display-large">{{ aboutData.firstName + " " + aboutData.lastName }}</h1>
+  <h2 class="typography-display-small">{{aboutData.job}}</h2>
+  <p class="typography-body-large center">{{aboutData.introduction}}</p>
+  <div>
+    @for (social of aboutData.socials; track social.name){
+      <a matButton href="{{social.link}}" target="_blank">{{social.name}}</a>
+    }
+  </div>
+</div>
+}
+@if (primarySkills | async; as skillsData){
+<div class="skills container">
+  <h2 class="typography-headline-large">Primary Skills</h2>
+  <div class="list">
+    @for (skill of skillsData; track skill.name){
+      <button matButton="filled"
+              [matTooltip]="skill.level"
+              matTooltipPosition="below"
+              aria-label=""
+              class="skill">
+        <h3>{{skill.name}}</h3>
+      </button>
+    }
+  </div>
+</div>
+}
+  @if (secondarySkills | async; as skillsData){
+    <div class="skills container">
+      <h2 class="typography-headline-small">Secondary Skills</h2>
+      <div class="list ">
+        @for (skill of skillsData; track skill.name){
+          <button matButton=""
+                  [matTooltip]="skill.level"
+                  matTooltipPosition="below"
+                  aria-label=""
+                  class="skill">
+            <h3>{{skill.name}}</h3>
+          </button>
+        }
+      </div>
+    </div>
+  }
+  @if (projects | async; as projectsData) {
+    <div class="projects container">
+      <h2 class="typography-headline-large">Projects</h2>
+      <div class="list">
+        @for (project of projectsData; track project.title) {
+          <app-card [cardData]="project">
+            <a matButton routerLink="/projects/{{project.title}}">More...</a>
+          </app-card>
+        }
+      </div>
+    </div>
+  }
+  <div class="list ed-ex">
+    @if (educationData | async; as educationList) {
+      <div class="container education">
+        <h2 class="typography-headline-large">Education</h2>
+        <app-list class="line" [listData]="educationList"></app-list>
+      </div>
+    }
+    @if (experienceData | async; as experienceList) {
+      <div class="container experience">
+        <h2 class="typography-headline-large">Experience</h2>
+        <app-list class="line" [listData]="experienceList"></app-list>
+      </div>
+    }
+  </div>
+
+  @if (hobbyData | async; as hobbies) {
+    <div class="container center hobbies">
+      <h2 class="typography-headline-large">Hobbies</h2>
+      @for (hobby of hobbies; track hobby.name) {
+      <div class="hobby">
+        <h3 class="typography-headline-small">{{hobby.name}}</h3>
+        <p class="typography-body-large">{{hobby.description}}</p>
+      </div>
+      }
+    </div>
+  }
+
+  <div class="container">
+    <h2 class="typography-headline-large">Get In Touch</h2>
+    <p class="typography-body-large center">I'm currently seeking new opportunities and would love to hear from you. Whether you have a question or just want to say hi, feel free to reach out.</p>
+    @if (about | async; as aboutData) {
+      <a matButton href="mailto:{{aboutData.contact.email}}">{{aboutData.contact.email}}</a>
+      <p class="typography-body-large center">{{aboutData.contact.address}}</p>
+    }
+  </div>
+
+<div class="container">
+  <p class="typography-label-small">© {{ date.getFullYear() }} Gröner. All Rights Reserved.</p>
+</div>

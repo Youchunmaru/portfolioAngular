@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+
+}
+/*
+TYPOGRAPHY
+*/
+/*display*/
+.typography-display-small {
+  font: var(--mat-sys-display-small);
+}
+.typography-display-medium {
+  font: var(--mat-sys-display-medium);
+}
+.typography-display-large {
+  font: var(--mat-sys-display-large);
+}
+/*headline*/
+.typography-headline-small {
+  font: var(--mat-sys-headline-small);
+}
+.typography-headline-medium {
+  font: var(--mat-sys-headline-medium);
+}
+.typography-headline-large {
+  font: var(--mat-sys-headline-large);
+}
+/*title*/
+.typography-title-small {
+  font: var(--mat-sys-title-small);
+}
+.typography-title-medium {
+  font: var(--mat-sys-title-medium);
+}
+.typography-title-large {
+  font: var(--mat-sys-title-large);
+}
+/*label*/
+.typography-label-small {
+  font: var(--mat-sys-label-small);
+}
+.typography-label-medium {
+  font: var(--mat-sys-label-medium);
+}
+.typography-label-large {
+  font: var(--mat-sys-label-large);
+}
+/*body*/
+.typography-body-small {
+  font: var(--mat-sys-body-small);
+}
+.typography-body-medium {
+  font: var(--mat-sys-body-medium);
+}
+.typography-body-large {
+  font: var(--mat-sys-body-large);
+}
+/*
+ELEVATION
+*/
+.elevation-level-0{
+  box-shadow: var(--mat-sys-level0);
+}
+.elevation-level-1{
+  box-shadow: var(--mat-sys-level1);
+}
+.elevation-level-2{
+  box-shadow: var(--mat-sys-level2);
+}
+.elevation-level-3{
+  box-shadow: var(--mat-sys-level3);
+}
+.elevation-level-4{
+  box-shadow: var(--mat-sys-level4);
+}
+.elevation-level-5{
+  box-shadow: var(--mat-sys-level5);
+}
+/*COLOR*/
+.color-primary{
+  color: var(--mat-sys-on-primary);
+  background-color: var(--mat-sys-primary);
+}
+.color-primary-container{
+  color: var(--mat-sys-on-primary-container);
+  background-color: var(--mat-sys-primary-container);
+}
+.color-secondary{
+  color: var(--mat-sys-on-secondary);
+  background-color: var(--mat-sys-secondary);
+}
+.color-secondary-container{
+  color: var(--mat-sys-on-secondary-container);
+  background-color: var(--mat-sys-secondary-container);
+}
+.color-surface{
+  color: var(--mat-sys-on-surface);
+  background-color: var(--mat-sys-surface);
+}
+.color-tertiary{
+  color: var(--mat-sys-on-tertiary);
+  background-color: var(--mat-sys-tertiary);
+}
+.color-tertiary-container{
+  color: var(--mat-sys-on-tertiary-container);
+  background-color: var(--mat-sys-tertiary-container);
+}
+.color-error-container{
+  color: var(--mat-sys-on-error-container);
+  background-color: var(--mat-sys-error-container);
+}
+.color-error{
+  color: var(--mat-sys-on-error);
+  background-color: var(--mat-sys-error);
+}
+.color-error-container{
+  color: var(--mat-sys-on-error-container);
+  background-color: var(--mat-sys-error-container);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

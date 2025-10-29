@@ -1,0 +1,19 @@
+
+@if (projectData | async; as project) {
+
+  <div class="project list">
+    <div class="container">
+      <h1 class="typography-display-small">{{project.title}}</h1>
+      <h2 class="typography-headline-small">{{project.subtitle}}</h2>
+      <p class="typography-body-large">{{project.content}}</p>
+      @for (link of project.links; track link.name){
+        <a matButton [href]="link.link">{{link.name}}</a>
+      }
+    </div>
+    <div class="container">
+      <img class="img" [src]="project.img" alt="">
+    </div>
+
+  </div>
+
+}

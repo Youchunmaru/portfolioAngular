@@ -1,0 +1,201 @@
+{
+ "projects": [
+   {
+     "title": "Visualization of Logistic Infrastructure",
+     "subtitle": "Java TypeScript WildFly MySQL JPA JMI",
+     "content": "Developed a real-time web application for visualizing complex logistics infrastructure. The frontend, built with TypeScript and Konva.js, renders an interactive map that updates live via a Java WebSocket server. The system's backend features a distributed architecture: a standalone Java application processes data telegrams from PLCs and updates a MySQL database (using JPA/Hibernate) via a WildFly-hosted REST API. This API also provides additional data to the web app and exposes special controller functions via JMI and JMX.",
+     "tldr": "A full-stack, real-time logistics visualization system using Java, Node.js, Konva.js, and a distributed backend to display live PLC data.",
+     "img": "visu2.png",
+     "links": [
+
+     ]
+   },{
+     "title": "SOPRA: Deserts of Dune",
+     "subtitle": "Java JSON",
+     "content": "As part of a two-semester university course (SOPRA), I was a primary developer on a team of five creating \"Deserts of Dune,\" a 3X strategy game. My main responsibility was the architecture and development of the Java-based game server. The server was engineered to manage all game logic, track state, and handle communication for multiple clients (up to 4) and multiple game instances concurrently. To ensure interoperability between clients and servers developed by different teams, we collaborated to define a standardized JSON-based messaging protocol.",
+     "tldr": "Developed the core Java backend for a multiplayer 3X university strategy game, managing concurrent game instances, state, and client communication.",
+     "img": "Dune.png",
+     "links": [
+       {
+         "name": "GitHub",
+         "link": "https://github.com/Youchunmaru/sopra"
+       }
+     ]
+   },{
+     "title": "Portfolio v1",
+     "subtitle": "Svelte Tailwind CSS Firebase",
+     "content": "My first personal portfolio website, designed to serve as a dynamic online resume. Built using the modern JavaScript framework Svelte and styled with Tailwind CSS, it effectively showcases my skills, featured projects, and professional experience. The static site is deployed globally using Firebase Hosting.",
+     "tldr": "My first portfolio website, built with Svelte and Tailwind CSS, and deployed via Firebase.",
+     "img": "portfolio.png",
+     "links": [
+       {
+         "name": "GitHub",
+         "link": "https://github.com/Youchunmaru/portfolio"
+       },
+       {
+         "name": "Website",
+         "link": "https://youchunmaru-portfolio.web.app/"
+       }
+     ]
+   }, {
+     "title": "Portfolio Self hosted",
+     "subtitle": "Angular Cloudflare",
+     "content": "My current, updated personal portfolio website. This version was developed using Angular to create a more robust single-page application (SPA) for showcasing my projects, skills, and experience. A key aspect of this project was moving away from third-party hosting; the site is now self-hosted and securely exposed to the internet using Cloudflare Tunnels.",
+     "tldr": "My current portfolio, built with Angular and self-hosted securely using Cloudflare Tunnels.",
+     "img": "portfolio_self.png",
+     "links": [
+       {
+         "name": "GitHub",
+         "link": "https://github.com/Youchunmaru/portfolio"
+       }
+     ]
+   },
+   {
+     "title": "Compass",
+     "subtitle": "Kotlin Ktor Angular Express JWT",
+     "content": "An alpha full-stack application named \"Compass.\" The backend is built with Kotlin and Ktor, providing a REST API for database read/write operations. The API is secured using JWT (JSON Web Tokens) for authentication. The frontend is a corresponding Angular web application, providing the UI for user-friendly data interaction and authentication against the server.",
+     "tldr": "A full-stack application featuring a Kotlin/Ktor backend with JWT-secured REST endpoints and an Angular frontend for the UI.",
+     "img": "",
+     "links": [
+       {
+         "name": "GitHub",
+         "link": "https://github.com/Youchunmaru/portfolio"
+       }
+     ]
+   }
+  ],
+  "primarySkills": [{
+    "name": "Java EE",
+    "level": "Advanced++"
+  },{
+    "name": "TypeScript",
+    "level": "Advanced"
+  },{
+    "name": "MySql",
+    "level": "Intermediate"
+  },{
+    "name": "Angular",
+    "level": "Intermediate"
+  }],
+  "secondarySkills": [{
+    "name": "Kotlin",
+    "level": "Intermediate"
+  },{
+    "name": "Ktor",
+    "level": "Beginner"
+  },{
+    "name": "CSS",
+    "level": "Intermediate"
+  },{
+    "name": "JS",
+    "level": "Intermediate"
+  },{
+    "name": "Spring Boot",
+    "level": "Beginner"
+  },{
+    "name": "Docker",
+    "level": "Intermediate"
+  },{
+    "name": "Git",
+    "level": "Intermediate"
+  },{
+    "name": "Linux",
+    "level": "Intermediate"
+  },{
+    "name": "Node.js",
+    "level": "Intermediate"
+  },{
+    "name": "JPA",
+    "level": "Intermediate"
+  },{
+    "name": "JSF",
+    "level": "Beginner"
+  },{
+    "name": "Hibernate",
+    "level": "Beginner"
+  },{
+    "name": "JMI",
+    "level": "Beginner"
+  },{
+    "name": "Scrum",
+    "level": ""
+  },{
+    "name": "WildFly",
+    "level": "Beginner"
+  },{
+    "name": "EJB",
+    "level": "Beginner"
+  },{
+    "name": "REST",
+    "level": "Intermediate"
+  },{
+    "name": "HTML",
+    "level": "Intermediate"
+  },{
+    "name": "JavaSwing",
+    "level": "Intermediate"
+  }],
+  "about": {
+    "firstName": "Samuel",
+    "lastName": "Gröner",
+    "job": "Software Developer",
+    "introduction": "I am a Full-Stack Software Developer with focus on Java Applications. I also know my way around the Web with TypeScript and Angular.",
+    "contact": {
+      "email": "samuelgroenerr+jobs@gmail.com",
+      "phone": "",
+      "address": "Ulm / Germany"
+    },
+    "socials": [{
+      "name": "GitHub",
+      "link": "https://github.com/Youchunmaru"
+    },{
+      "name": "Instagram",
+      "link": "https://www.instagram.com/youchunmaru/#"
+    }],
+    "languages": ["English", "German"],
+    "hobbies": [{
+      "name": "Scout",
+      "description": "I've worked as a group leader for 5 years, planing small to bigger events with children aged 10y - 13y.\nNow i am officer of public relations and digital infrastructure in my group."
+    },{
+      "name": "Music",
+      "description": "I play guitar, keyboard and starting to learn violin."
+    },{
+      "name": "Gaming",
+      "description": "I like to play a viarity of games and genres. My most loved genres are RPGs.\nI am a fan of the Final Fantasy games, especially FF VI, but i also like The Elder Scrolls games. My most loved gaming franchise is probably Pokemon.\nIf i am not playing one of the above then i am probably playing Tetris."
+    },{
+      "name": "Photography",
+      "description": "I am a hobby photographer. Most of the time i am taking pictures of animals, but as part of my PR responsibility i am also taking pictures at various scouting events."
+    }]
+  },
+  "education": [{
+    "name": "Cursera",
+    "degree": "Software Developer Certificates",
+    "from": "Jul 2025",
+    "until": "Jul 2025",
+    "description": "Amazon Junior Software Developer Professional Certificate & Java FullStack Developer Specialization",
+    "at": "Amazon & Board Infinity"
+  },{
+    "name": "Bacholor in Computer Science",
+    "degree": "No Qualification",
+    "from": "Sep 2019",
+    "until": "March 2023",
+    "description": "",
+    "at": "Universität Ulm"
+  },
+    {
+      "name": "High School",
+      "degree": "Subject-Specific University Entrance Qualification",
+      "from": "Sep 2015",
+      "until": "Jun 2019",
+      "description": "",
+      "at": "FOS/BOS Neu-Ulm"
+    }],
+  "experience": [{
+    "name": "Software Developer",
+    "position": "Apprenticeship",
+    "from": "Aug 2023",
+    "until": "Juli 2025",
+    "description": "2 year apprenticeship as a \"Fachinformatiker in Anwendungsentwicklung\".",
+    "at": "mercatis GmbH / Robert-Bosh-Schule Ulm"
+  }]
+}

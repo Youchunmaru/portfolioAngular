@@ -1,0 +1,44 @@
+.entry{
+  height: 100vh;
+}
+
+.center{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  max-width: 65em;
+  align-self: center;
+  justify-self: center;
+}
+
+.projects{
+  flex-wrap: wrap;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.ed-ex{
+
+}
+.line{
+  border-left: 2px solid var(--mat-sys-outline);
+}
+.experience{
+
+}
+
+.hobbies{
+}
