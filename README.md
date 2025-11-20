@@ -1,59 +1,67 @@
 # Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+my portfolio website built with Angular and deployed locally with nginx and Cloudflare tunnel
 
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Production build
 
 ```bash
-ng generate component component-name
+npm prod
+````
+```bash
+# needed for initial build and after changes of the nginx config
+sudo nginx -t
+sudo systemctl restart nginx
+```
+```nginx
+location / {
+    root /var/www/html; # Or wherever your angular files are
+    index index.html;
+
+    # 1. Try to find the specific file requested ($uri)
+    # 2. Try to find a folder with that name ($uri/)
+    # 3. If neither exists, serve index.html (Angular takes over!)
+    try_files $uri $uri/ /index.html;
+}
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Automation scripts
+
+to publish to nginx run:
+```bash
+sudo ./publish.sh
+```
+
+to setup cloudflare tunnel run:
+```bash
+sudo ./setup-cloudflared.sh
+```
+
+## some pre-requisites you might need
 
 ```bash
-ng generate --help
+sudo apt-get install nginx -y
 ```
-
-## Building
-
-To build the project run:
-
 ```bash
-ng build
+# or use https://github.com/nvm-sh/nvm
+sudo apt-get install npm
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
 ```bash
-ng test
+npm install -g @angular/cli
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
 ```bash
-ng e2e
+# Add Cloudflare's GPG key
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+
+# Add the 'cloudflared' repository
+echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared buster main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+
+sudo apt install cloudflared
 ```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
