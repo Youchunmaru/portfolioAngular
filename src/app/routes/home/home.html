@@ -1,8 +1,8 @@
 @if (about | async; as aboutData) {
 <div class="entry container">
-  <h1 class="typography-display-large">{{ aboutData.firstName + " " + aboutData.lastName }}</h1>
-  <h2 class="typography-display-small">{{aboutData.job}}</h2>
-  <p class="typography-body-large center">{{aboutData.introduction}}</p>
+  <h1 class="typography-display-large center">{{ aboutData.firstName + " " + aboutData.lastName }}</h1>
+  <h2 class="typography-display-small center">{{aboutData.job}}</h2>
+  <p class="typography-body-large center wrap">{{aboutData.introduction}}</p>
   <div>
     @for (social of aboutData.socials; track social.name){
       <a matButton href="{{social.link}}" target="_blank">{{social.name}}</a>

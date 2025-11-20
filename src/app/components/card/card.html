@@ -8,8 +8,7 @@
     <mat-card-title>{{card.title}}</mat-card-title>
     <mat-card-subtitle>{{card.subtitle}}</mat-card-subtitle>
   </mat-card-header>
-
-    <img class="img" mat-card-image [src]="card.img" alt="">
+    <img class="img" mat-card-image ngSrc="{{card.img}}" alt="" fill>
 
   <mat-card-content>
     <p>

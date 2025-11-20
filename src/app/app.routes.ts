@@ -7,7 +7,7 @@ import {dataResolver} from './guards/data-resolver';
 export const routes: Routes = [
   {
     path: '',
-    title: 'App Home Page',
+    title: 'Portfolio',
     component: Home,
     resolve: {
       data: dataResolver

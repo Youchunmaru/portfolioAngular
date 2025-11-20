@@ -1,10 +1,11 @@
 .card {
-  max-width: 30em;
-  border-radius: 1em;
+  max-width: 650px;
+  border-radius: 8px;
+  width: min-content;
+  min-width: 300px;
 }
 
 .img {
-  width: 29em;
-  height: 20em;
-  object-fit: contain;
+  position: relative !important;
+  object-fit: scale-down;
 }

@@ -2,15 +2,15 @@
  "projects": [
    {
      "title": "Visualization of Logistic Infrastructure",
-     "subtitle": "Java TypeScript WildFly MySQL JPA JMI",
-     "content": "Developed a real-time web application for visualizing complex logistics infrastructure. The frontend, built with TypeScript and Konva.js, renders an interactive map that updates live via a Java WebSocket server. The system's backend features a distributed architecture: a standalone Java application processes data telegrams from PLCs and updates a MySQL database (using JPA/Hibernate) via a WildFly-hosted REST API. This API also provides additional data to the web app and exposes special controller functions via JMI and JMX.",
+     "subtitle": "Java TS WildFly MySQL JPA JMI",
+     "content": "I Developed a real-time web application for visualizing complex logistics infrastructure. The frontend, built with TypeScript and Konva.js, renders an interactive map that updates live via a Java WebSocket server. The system's backend features a distributed architecture: a standalone Java application processes data telegrams from PLCs and updates a MySQL database (using JPA/Hibernate) via a WildFly-hosted REST API. This API also provides additional data to the web app and exposes special controller functions via JMI and JMX.",
      "tldr": "A full-stack, real-time logistics visualization system using Java, Node.js, Konva.js, and a distributed backend to display live PLC data.",
      "img": "visu2.png",
      "links": [
 
      ]
    },{
-     "title": "SOPRA: Deserts of Dune",
+     "title": "SOPRA: Deserts of Dune - University Project",
      "subtitle": "Java JSON",
      "content": "As part of a two-semester university course (SOPRA), I was a primary developer on a team of five creating \"Deserts of Dune,\" a 3X strategy game. My main responsibility was the architecture and development of the Java-based game server. The server was engineered to manage all game logic, track state, and handle communication for multiple clients (up to 4) and multiple game instances concurrently. To ensure interoperability between clients and servers developed by different teams, we collaborated to define a standardized JSON-based messaging protocol.",
      "tldr": "Developed the core Java backend for a multiplayer 3X university strategy game, managing concurrent game instances, state, and client communication.",
@@ -46,7 +46,7 @@
      "links": [
        {
          "name": "GitHub",
-         "link": "https://github.com/Youchunmaru/portfolio"
+         "link": "https://github.com/Youchunmaru/portfolioAngular"
        }
      ]
    },
@@ -55,11 +55,11 @@
      "subtitle": "Kotlin Ktor Angular Express JWT",
      "content": "An alpha full-stack application named \"Compass.\" The backend is built with Kotlin and Ktor, providing a REST API for database read/write operations. The API is secured using JWT (JSON Web Tokens) for authentication. The frontend is a corresponding Angular web application, providing the UI for user-friendly data interaction and authentication against the server.",
      "tldr": "A full-stack application featuring a Kotlin/Ktor backend with JWT-secured REST endpoints and an Angular frontend for the UI.",
-     "img": "",
+     "img": "compass.png",
      "links": [
        {
          "name": "GitHub",
-         "link": "https://github.com/Youchunmaru/portfolio"
+         "link": "https://github.com/Youchunmaru/compass-server"
        }
      ]
    }
@@ -151,20 +151,23 @@
     },{
       "name": "Instagram",
       "link": "https://www.instagram.com/youchunmaru/#"
+    },{
+      "name": "Resume",
+      "link": "https://www.instagram.com/youchunmaru/#"
     }],
     "languages": ["English", "German"],
     "hobbies": [{
-      "name": "Scout",
-      "description": "I've worked as a group leader for 5 years, planing small to bigger events with children aged 10y - 13y.\nNow i am officer of public relations and digital infrastructure in my group."
+      "name": "Scouting",
+      "description": "I’ve been a Scout for a long time. After 5 years of leading a group of 10-to-13-year-olds, I’ve moved into the role of managing our Digital Infrastructure and PR."
     },{
-      "name": "Music",
-      "description": "I play guitar, keyboard and starting to learn violin."
+      "name": "Musician",
+      "description": "I play the guitar and keyboard, and I’m currently scratching my way through learning the violin (it’s a work in progress!)."
     },{
-      "name": "Gaming",
-      "description": "I like to play a viarity of games and genres. My most loved genres are RPGs.\nI am a fan of the Final Fantasy games, especially FF VI, but i also like The Elder Scrolls games. My most loved gaming franchise is probably Pokemon.\nIf i am not playing one of the above then i am probably playing Tetris."
+      "name": "Gamer",
+      "description": "I am a huge RPG fan. If you want to talk about why Final Fantasy VI is the best in the series, I’m your person. I also love The Elder Scrolls and will never get tired of Pokémon. If I only have a few minutes to spare, you'll catch me playing Tetris."
     },{
-      "name": "Photography",
-      "description": "I am a hobby photographer. Most of the time i am taking pictures of animals, but as part of my PR responsibility i am also taking pictures at various scouting events."
+      "name": "Photographer",
+      "description": "I love capturing moments. Most of my personal photography focuses on animals and nature, but thanks to my PR role in the Scouts, I also have plenty of experience shooting live events and reportage style."
     }]
   },
   "education": [{

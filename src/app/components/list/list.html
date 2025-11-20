@@ -1,6 +1,6 @@
 <mat-list>
   @for (item of listData(); track item.title) {
-  <mat-list-item [lines]="nOfLines()">
+  <mat-list-item class="item" [lines]="nOfLines()">
     <span matListItemTitle>{{item.title}}</span>
     @if (item.secondLine) {
       <span matListItemLine>{{item.secondLine}}</span>

@@ -1,13 +1,13 @@
 import {Component, inject, signal, WritableSignal} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {DataService, Project as P} from '../../services/data.service';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {map, Observable} from 'rxjs';
 import {MatButton} from '@angular/material/button';
 
 @Component({
   selector: 'app-project',
-  imports: [CommonModule, MatButton],
+  imports: [CommonModule, MatButton, NgOptimizedImage],
   templateUrl: './project.html',
   styleUrl: './project.css',
   providers: [DataService]
