@@ -1,8 +1,9 @@
-git update
+git pull
 
-ng prod
+npm install
 
+npm run prod
+
+sudo rm -r /var/www/html
 sudo cp dist/portfolio/browser/* /var/www/html
 
-sudo nginx -t
-sudo systemctl restart nginx
