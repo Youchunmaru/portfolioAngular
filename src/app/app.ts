@@ -1,6 +1,6 @@
-import {Component, inject, signal} from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {DataService} from './services/data.service';
+import { DataService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +10,9 @@ import {DataService} from './services/data.service';
 })
 export class App {
   protected readonly title = signal('portfolio');
+
+  constructor() {
+    console.log("%cHi, what are you doing here?", "font-size: x-large;")
+  }
+
 }
