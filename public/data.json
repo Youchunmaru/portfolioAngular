@@ -3,7 +3,7 @@
    {
      "title": "Visualization of Logistic Infrastructure",
      "subtitle": "Java TS WildFly MySQL JPA JMI",
-     "content": "I Developed a real-time web application for visualizing complex logistics infrastructure. The frontend, built with TypeScript and Konva.js, renders an interactive map that updates live via a Java WebSocket server. The system's backend features a distributed architecture: a standalone Java application processes data telegrams from PLCs and updates a MySQL database (using JPA/Hibernate) via a WildFly-hosted REST API. This API also provides additional data to the web app and exposes special controller functions via JMI and JMX.",
+     "content": "I developed a real-time web application for visualizing complex logistics infrastructure. The frontend, built with TypeScript and Konva.js, renders an interactive map that updates live via a Java WebSocket server. The system's backend features a distributed architecture: a standalone Java application processes data telegrams from PLCs and updates a MySQL database (using JPA/Hibernate) via a WildFly-hosted REST API. This API also provides additional data to the web app and exposes special controller functions via JMI and JMX.",
      "tldr": "A full-stack, real-time logistics visualization system using Java, Node.js, Konva.js, and a distributed backend to display live PLC data.",
      "img": "visu2.png",
      "links": [
@@ -60,6 +60,19 @@
        {
          "name": "GitHub",
          "link": "https://github.com/Youchunmaru/compass-server"
+       }
+     ]
+   },
+   {
+     "title": "skb.nvim",
+     "subtitle": "Lua",
+     "content": "I developed skb.nvim, a modular Neovim plugin designed to manage a local knowledge base directly from the terminal. Written in Lua, it creates a friction-less \"Zettelkasten-lite\" workflow using Markdown files. The plugin integrates seamlessly with Telescope to provide fast file finding and live-grep searching. It features built-in Git automation to handle synchronization (commit/push/pull) with a single command, alongside tools to view file history and uncommitted changes. It also supports custom templates and folder structures for organized note-taking.",
+     "tldr": "A Neovim plugin written in Lua for managing a local Markdown knowledge base with automated Git syncing and Telescope integration.",
+     "img": "skb.png",
+     "links": [
+       {
+         "name": "GitHub",
+         "link": "https://github.com/Youchunmaru/skb.nvim"
        }
      ]
    }
